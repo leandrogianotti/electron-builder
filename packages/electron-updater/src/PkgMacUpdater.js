@@ -16,7 +16,7 @@ function _child_process() {
 }
 
 function _BaseUpdater() {
-  const data = require("electron-updater/out/BaseUpdater");
+  const data = require("./BaseUpdater");
 
   _BaseUpdater = function () {
     return data;
@@ -26,7 +26,7 @@ function _BaseUpdater() {
 }
 
 function _Provider() {
-  const data = require("electron-updater/out/providers/Provider");
+  const data = require("./providers/Provider");
 
   _Provider = function () {
     return data;
