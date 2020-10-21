@@ -87,7 +87,7 @@ export class NsisUpdater extends BaseUpdater {
   }
 
   protected doInstall(options: InstallOptions): boolean {
-    const args = ["--updated"]
+    const args: string[] = []
     if (options.isSilent) {
       args.push("/S")
     }
