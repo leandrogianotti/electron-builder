@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "//": "do not wrap into single quotes - windows doesn't unwrap arg in this case",
-    "compile": "ts-babel \"packages/*\" && tsc --build test",
+    "compile": "ts-babel \"packages/electron-updater\" && tsc --build test",
     "//compile2": "tsc --build packages/electron-builder packages/electron-updater packages/electron-builder-squirrel-windows",
     "lint": "eslint packages --ext .ts",
     "lint-deps": "node ./test/out/helpers/checkDeps.js",

@@ -1558,6 +1558,7 @@ __metadata:
     "@babel/preset-env": ^7.11.5
     "@babel/preset-typescript": ^7.10.4
     "@jest/core": ^26.4.2
+    "@lgianotti/electron-updater": "workspace:*"
     "@types/ci-info": ^2.0.0
     "@types/fs-extra": ^9.0.1
     "@types/jest": ^26.0.14
@@ -1576,7 +1577,6 @@ __metadata:
     electron-builder: "workspace:*"
     electron-builder-squirrel-windows: "workspace:*"
     electron-publish: "workspace:*"
-    electron-updater: "workspace:*"
     fs-extra: ^9.0.1
     jest: ^26.4.2
     jest-junit: ^11.1.0
@@ -1833,6 +1833,23 @@ __metadata:
   checksum: 151547a8fd46cad58a52fdeedec6a1102c8946bed0f48ae80e12329bcd58b54fd239f43c953f6b076d57abe8ffab25ecda6acc837409e4ae0bcab247847da976
   languageName: node
   linkType: hard
+
+"@lgianotti/electron-updater@workspace:*, @lgianotti/electron-updater@workspace:packages/electron-updater":
+  version: 0.0.0-use.local
+  resolution: "@lgianotti/electron-updater@workspace:packages/electron-updater"
+  dependencies:
+    "@types/fs-extra": ^9.0.1
+    "@types/js-yaml": ^3.12.5
+    "@types/lodash.isequal": ^4.5.5
+    "@types/semver": ^7.3.4
+    builder-util-runtime: ^8.7.2
+    fs-extra: ^9.0.1
+    js-yaml: ^3.14.0
+    lazy-val: ^1.0.4
+    lodash.isequal: ^4.5.0
+    semver: ^7.3.2
+  languageName: unknown
+  linkType: soft
 
 "@nodelib/fs.scandir@npm:2.1.3":
   version: 2.1.3
@@ -4234,23 +4251,6 @@ __metadata:
   checksum: 23388b39692e2932e56033e7c0b5b5f70199e22c03335d97c811cad9b16f89e80c94abe55c6140aa12d0e19431abec764955395df9fdf3972918c6bccebc8e10
   languageName: node
   linkType: hard
-
-"electron-updater@workspace:*, electron-updater@workspace:packages/electron-updater":
-  version: 0.0.0-use.local
-  resolution: "electron-updater@workspace:packages/electron-updater"
-  dependencies:
-    "@types/fs-extra": ^9.0.1
-    "@types/js-yaml": ^3.12.5
-    "@types/lodash.isequal": ^4.5.5
-    "@types/semver": ^7.3.4
-    builder-util-runtime: ^8.7.2
-    fs-extra: ^9.0.1
-    js-yaml: ^3.14.0
-    lazy-val: ^1.0.4
-    lodash.isequal: ^4.5.0
-    semver: ^7.3.2
-  languageName: unknown
-  linkType: soft
 
 "emittery@npm:^0.7.1":
   version: 0.7.1
